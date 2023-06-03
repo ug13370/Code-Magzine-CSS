@@ -123,6 +123,7 @@ $headingColor: #1098ad;
       display: flex;
       flex-direction: column;
       gap: 15px;
+      position: relative;
       .header {
         @include heading(40px, normal, #1098ad);
       }
@@ -138,6 +139,16 @@ $headingColor: #1098ad;
         .sml-text {
           @include text(18px, italic, #444, 1);
         }
+      }
+      .label {
+        background-color: #ffe70e;
+        color: #444;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px 10px;
+        position: absolute;
+        top: -10px;
+        right: -25px;
       }
     }
     .blog-intro {
@@ -216,7 +227,7 @@ $headingColor: #1098ad;
   position: fixed;
   bottom: 50px;
   right: 50px;
-  font-size: 22px;
-  padding: 20px;
+  font-size: 18px;
+  padding: 10px;
   cursor: pointer;
 }
